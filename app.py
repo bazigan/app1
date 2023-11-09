@@ -33,7 +33,7 @@ def post(post_id):
 
 @app.route('/create', methods=('GET', 'POST'))
 def create():
-     if request.method == 'POST':
+    if request.method == 'POST':
         title = request.form['title']
         content = request.form['content']
 
