@@ -8,7 +8,7 @@ services:
     ports:
       - "80:5000"
     volumes:
-      - blog-data:./database.db
+      - blog-data:/blog/database.db
 
   monitoring:
     image: "louislam/uptime-kuma:1"
@@ -17,7 +17,7 @@ services:
     ports:
       - "3001:3001"
     volumes:
-      - monitoring:./data
+      - monitoring:/data
 
 volumes:
   - blog-data: {}
