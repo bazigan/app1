@@ -3,6 +3,7 @@ version: '3.7'
 services:
   blog:
     build: ./blog
+    init: true
     restart: always
     ports:
       - "80:5000"
@@ -11,6 +12,7 @@ services:
 
   monitoring:
     image: "louislam/uptime-kuma:1"
+    init: true
     restart: always
     ports:
       - "3001:3001"
