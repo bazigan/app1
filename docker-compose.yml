@@ -20,5 +20,5 @@ services:
       - monitoring:./data
 
 volumes:
-  - blog-data:
-  - monitoring:
+  - blog-data: {}
+  - monitoring: {}
