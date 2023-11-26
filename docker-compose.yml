@@ -1,6 +1,9 @@
 services:
   blog:
-    build: ./blog
+    image: bazigan/blog
+    build:
+      context: ./blog
+      dockerfile: Dockerfile
     init: true
     restart: always
     ports:
