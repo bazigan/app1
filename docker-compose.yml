@@ -1,5 +1,6 @@
 services:
   blog:
+    image: bazigan/blog
     build: ./blog
     init: true
     restart: always
